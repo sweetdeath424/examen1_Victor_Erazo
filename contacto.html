@@ -3,10 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | SaludVida Hospital</title>
+    <meta name="description" content="Comunícate con Salud Vida para agendar tu cita o resolver tus dudas. Estamos aquí para ayudarte.">
+    <meta name="theme-color" content="#0b6e75">
+    <title>Contacto | Salud Vida</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Salud Vida, inicio"><img src="img/logos/logo-saludvida-header.png" alt="Salud Vida"></a>
+        <nav class="main-nav" aria-label="Navegación principal">
+            <a class="nav-link" href="index.html">Inicio</a>
+            <a class="nav-link" href="index.html#servicios">Servicios</a>
+            <a class="nav-link" href="index.html#nosotros">Nosotros</a>
+            <a class="nav-link active" href="contacto.html" aria-current="page">Contacto</a>
+        </nav>
+        <a class="header-cta" href="#formulario">Agenda tu cita <span aria-hidden="true">↗</span></a>
+    </header>
+    <main class="contact-page">
+        <section class="contact-intro">
+            <span class="eyebrow eyebrow-light">Estamos aquí para ti</span>
+            <h1>Hablemos de<br><em>tu bienestar.</em></h1>
+            <p>Cuéntanos cómo podemos ayudarte. Nuestro equipo está listo para orientarte y encontrar juntos el mejor camino para tu salud.</p>
+            <div class="contact-hours"><span class="status-dot"></span><span>Atención de urgencias <strong>24 horas, todos los días</strong></span></div>
+        </section>
+        <section class="contact-layout" aria-label="Información de contacto y formulario">
+            <div class="contact-details">
+                <span class="eyebrow">Comunícate con nosotros</span>
+                <h2>Te escuchamos.</h2>
+                <p class="contact-lead">Elige el canal que te resulte más cómodo. Estamos para acompañarte.</p>
+                <div class="detail-item">
+                    <span class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.6 3h2.8l1.4 4.2-1.7 1.7a15 15 0 0 0 6 6l1.7-1.7 4.2 1.4v2.8a2 2 0 0 1-2.2 2A17 17 0 0 1 4.6 5.2 2 2 0 0 1 6.6 3Z"/></svg></span>
+                    <div><span>Llámanos</span><strong>(602) 000 0000</strong><small>Línea de atención · 24/7</small></div>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5h18v14H3z"/><path d="m3 6 9 7 9-7"/></svg></span>
+                    <div><span>Escríbenos</span><strong>hola@saludvida.com</strong><small>Te responderemos pronto</small></div>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+                    <div><span>Visítanos</span><strong>Av. de la Salud #123</strong><small>Popayán, Colombia</small></div>
+                </div>
+                <div class="emergency-note"><span aria-hidden="true">✳</span><p><strong>¿Es una emergencia?</strong><br>Acude directamente a nuestro servicio de urgencias disponible las 24 horas.</p></div>
+            </div>
+            <div class="form-card" id="formulario">
+                <span class="eyebrow">Escríbenos</span><h2>¿En qué podemos ayudarte?</h2>
+                <p>Déjanos tus datos y el motivo de tu consulta.</p>
+                <form>
+                    <div class="form-row">
+                        <label for="nombre">Nombre completo <span aria-hidden="true">*</span><input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" required></label>
+                        <label for="telefono">Teléfono <span aria-hidden="true">*</span><input id="telefono" name="telefono" type="tel" autocomplete="tel" placeholder="Tu número de contacto" required></label>
+                    </div>
+                    <label for="correo">Correo electrónico <span aria-hidden="true">*</span><input id="correo" name="correo" type="email" autocomplete="email" placeholder="nombre@correo.com" required></label>
+                    <label for="motivo">Motivo de contacto
+                        <select id="motivo" name="motivo">
+                            <option value="">Selecciona una opción</option><option value="cita">Agendar una cita</option><option value="servicios">Información de servicios</option><option value="otro">Otra consulta</option>
+                        </select>
+                    </label>
+                    <label for="mensaje">Mensaje <span aria-hidden="true">*</span><textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos un poco más..." required></textarea></label>
+                    <p class="form-note">Este formulario es una demostración y no envía datos. Para comunicarte, llámanos o escríbenos directamente.</p>
+                </form>
+                <a class="button button-primary form-submit" href="mailto:hola@saludvida.com?subject=Consulta%20a%20Salud%20Vida">Escríbenos por correo <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <a class="footer-brand" href="index.html"><img src="img/logos/logo-saludvida-footer.png" alt="Salud Vida"></a>
+        <p>Salud Vida · Cuidamos de ti y de los tuyos.</p>
+        <a href="index.html">Volver al inicio <span aria-hidden="true">↗</span></a>
+    </footer>
 </body>
 </html>
